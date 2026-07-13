@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harendra Pratap — Business Analyst & Data Analyst</title>
+  <meta name="description" content="Portfolio of Harendra Pratap, MBA (Business Analytics) candidate specializing in Data Analysis, Business Intelligence, and Machine Learning-driven Insights.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Harendra Pratap — Business Analyst & Data Analyst">
+  <meta property="og:description" content="MBA (Business Analytics) candidate proficient in Python, SQL, Power BI, Tableau. Turning data into actionable business insights.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://preharendra.github.io">
+
+  <!-- Favicon (inline SVG data URI) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">Harendra.</a>
+
+      <div class="nav__links" id="navLinks">
+        <a href="#hero" class="nav__link active" data-section="hero">Home</a>
+        <a href="#projects" class="nav__link" data-section="projects">Projects</a>
+        <a href="#about" class="nav__link" data-section="about">About</a>
+        <a href="#contact" class="nav__link" data-section="contact">Contact</a>
+        <a href="Harendra_Harvard_Resume.docx" download class="nav__cta" id="nav-resume-btn">
+          <svg class="btn--icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Resume
+        </a>
+      </div>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero" id="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="hero__badge reveal">
+          <span class="hero__badge-dot"></span>
+          <span class="hero__badge-text">Available for new opportunities</span>
+        </div>
+
+        <p class="accent-text hero__accent reveal reveal-delay-1">Hey, there</p>
+
+        <h1 class="display-xl hero__title reveal reveal-delay-2">I AM<br>HARENDRA</h1>
+
+        <p class="hero__subtitle reveal reveal-delay-3">Business Analyst &amp; Data Analyst</p>
+
+        <p class="hero__description reveal reveal-delay-3">
+          Specialized in Data Analysis, Business Intelligence, and Machine Learning-driven Insights. Turning raw data into strategic decisions.
+        </p>
+
+        <div class="hero__ctas reveal reveal-delay-4">
+          <a href="Harendra_Harvard_Resume.docx" download class="btn btn--primary" id="hero-resume-btn">
+            <svg class="btn--icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+          <a href="#projects" class="btn btn--secondary">
+            View Projects
+            <svg class="btn--icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__image reveal reveal-delay-2">
+        <div class="hero__float hero__float--1"></div>
+        <div class="hero__float hero__float--2"></div>
+        <img src="assets/hero-graphic.png" alt="Abstract data visualization graphic representing analytics and business intelligence" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ═══════════════ SERVICES ═══════════════ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services__header">
+        <p class="label services__label reveal">What I can offer</p>
+        <h2 class="display-lg reveal reveal-delay-1">I Can Help<br>You With</h2>
+      </div>
+
+      <div class="services__grid">
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-card__icon">📊</div>
+          <h3 class="service-card__title">Data Analysis &amp; Visualization</h3>
+          <p class="service-card__desc">Python, R, SQL, Power BI, Tableau, and Advanced Excel — transforming complex datasets into clear, actionable visual stories.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-card__icon">📋</div>
+          <h3 class="service-card__title">Business Process &amp; Requirements</h3>
+          <p class="service-card__desc">Requirement gathering, KPI tracking, business process mapping, proposal development, and strategic insights for informed decision-making.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-card__icon">🤖</div>
+          <h3 class="service-card__title">Machine Learning &amp; Prediction</h3>
+          <p class="service-card__desc">Churn prediction, RFM segmentation, classification models — building predictive systems that drive proactive business strategies.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-4">
+          <div class="service-card__icon">📖</div>
+          <h3 class="service-card__title">Research &amp; Storytelling</h3>
+          <p class="service-card__desc">Company profiling, industry research, consumer insights, and data storytelling — communicating findings that move stakeholders to action.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ═══════════════ STATS ═══════════════ -->
+  <section class="stats" id="stats">
+    <div class="container stats__inner">
+      <div class="stats__content">
+        <h2 class="display-lg stats__heading reveal">Turning My Vision<br>Into Reality</h2>
+        <p class="stats__description reveal reveal-delay-1">
+          I build data-driven solutions for real-world business challenges. Every project starts with a question and ends with measurable impact.
+        </p>
+
+        <div class="stats__grid reveal reveal-delay-2">
+          <div class="stat-item">
+            <span class="stat-number stat-item__number" data-target="1000000" data-suffix="+">0</span>
+            <span class="stat-item__label">Retail transactions<br>analyzed</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number stat-item__number" data-target="148671" data-suffix="+">0</span>
+            <span class="stat-item__label">Loan records<br>analyzed</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number stat-item__number" data-target="6" data-suffix="">0</span>
+            <span class="stat-item__label">Certifications<br>completed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats__image reveal reveal-delay-2">
+        <img src="assets/project-loan-dashboard.png" alt="Interactive Power BI analytics dashboard showing loan default prediction metrics" loading="lazy">
+        <div class="stats__image-overlay"></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ═══════════════ SKILLS TIMELINE ═══════════════ -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="skills__header">
+        <p class="label reveal">Expertise</p>
+        <h2 class="display-lg reveal reveal-delay-1">Experience<br>&amp; Skills</h2>
+      </div>
+
+      <div class="skills__table">
+        <div class="skills__row reveal">
+          <span class="skills__category">Programming &amp; Querying</span>
+          <div class="skills__tools">
+            <span class="skills__tag">Python</span>
+            <span class="skills__tag">R</span>
+            <span class="skills__tag">SQL (T-SQL)</span>
+          </div>
+        </div>
+
+        <div class="skills__row reveal reveal-delay-1">
+          <span class="skills__category">Data Visualization</span>
+          <div class="skills__tools">
+            <span class="skills__tag">Power BI</span>
+            <span class="skills__tag">Tableau</span>
+            <span class="skills__tag">Advanced Excel</span>
+          </div>
+        </div>
+
+        <div class="skills__row reveal reveal-delay-2">
+          <span class="skills__category">Business Analysis</span>
+          <div class="skills__tools">
+            <span class="skills__tag">Requirement Gathering</span>
+            <span class="skills__tag">KPI Tracking</span>
+            <span class="skills__tag">Process Mapping</span>
+            <span class="skills__tag">Proposal Development</span>
+            <span class="skills__tag">Strategic Insights</span>
+            <span class="skills__tag">Dashboarding</span>
+          </div>
+        </div>
+
+        <div class="skills__row reveal reveal-delay-3">
+          <span class="skills__category">Research &amp; Analysis</span>
+          <div class="skills__tools">
+            <span class="skills__tag">Company Profiling</span>
+            <span class="skills__tag">Industry Research</span>
+            <span class="skills__tag">Consumer Insights</span>
+            <span class="skills__tag">Secondary Research</span>
+          </div>
+        </div>
+
+        <div class="skills__row reveal reveal-delay-3">
+          <span class="skills__category">Gen AI &amp; Automation</span>
+          <div class="skills__tools">
+            <span class="skills__tag">ChatGPT</span>
+            <span class="skills__tag">Gemini</span>
+            <span class="skills__tag">Microsoft Copilot</span>
+            <span class="skills__tag">NotebookLM</span>
+          </div>
+        </div>
+
+        <div class="skills__row reveal reveal-delay-4">
+          <span class="skills__category">Design &amp; Communication</span>
+          <div class="skills__tools">
+            <span class="skills__tag">Canva</span>
+            <span class="skills__tag">Infographics</span>
+            <span class="skills__tag">PowerPoint</span>
+            <span class="skills__tag">Data Storytelling</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ WORKSTATION ═══════════════ -->
+  <section class="workstation" id="workstation">
+    <div class="container">
+      <div class="workstation__header">
+        <p class="label reveal">Tools of the trade</p>
+        <h2 class="display-md reveal reveal-delay-1">My Workstation</h2>
+      </div>
+    </div>
+    <div class="workstation__track" id="workstationTrack">
+      <!-- Set 1 -->
+      <div class="workstation__item">
+        <div class="workstation__icon">🐍</div>
+        <span class="workstation__name">Python</span>
+      </div>
+      <div class="workstation__item">
+        <div class="workstation__icon">📈</div>
+        <span class="workstation__name">R</span>
+      </div>
+      <div class="workstation__item">
+        <div class="workstation__icon">🗃️</div>
+        <span class="workstation__name">SQL</span>
+      </div>
+      <div class="workstation__item">
+        <div class="workstation__icon">📊</div>
+        <span class="workstation__name">Power BI</span>
+      </div>
+      <div class="workstation__item">
+        <div class="workstation__icon">📉</div>
+        <span class="workstation__name">Tableau</span>
+      </div>
+      <div class="workstation__item">
+        <div class="workstation__icon">📗</div>
+        <span class="workstation__name">Excel</span>
+      </div>
+      <div class="workstation__item">
+        <div class="workstation__icon">🤖</div>
+        <span class="workstation__name">ChatGPT</span>
+      </div>
+      <div class="workstation__item">
+        <div class="workstation__icon">✨</div>
+        <span class="workstation__name">Gemini</span>
+      </div>
+      <div class="workstation__item">
+        <div class="workstation__icon">🔷</div>
+        <span class="workstation__name">Copilot</span>
+      </div>
+      <div class="workstation__item">
+        <div class="workstation__icon">🎨</div>
+        <span class="workstation__name">Canva</span>
+      </div>
+      <!-- Set 2 (duplicate for infinite scroll) -->
+      <div class="workstation__item">
+        <div class="workstation__icon">🐍</div>
+        <span class="workstation__name">Python</span>
+      </div>
+      <div class="workstation__item">
+        <div class="workstation__icon">📈</div>
+        <span class="workstation__name">R</span>
+      </div>
+      <div class="workstation__item">
+        <div class="workstation__icon">🗃️</div>
+        <span class="workstation__name">SQL</span>
+      </div>
+      <div class="workstation__item">
+        <div class="workstation__icon">📊</div>
+        <span class="workstation__name">Power BI</span>
+      </div>
+      <div class="workstation__item">
+        <div class="workstation__icon">📉</div>
+        <span class="workstation__name">Tableau</span>
+      </div>
+      <div class="workstation__item">
+        <div class="workstation__icon">📗</div>
+        <span class="workstation__name">Excel</span>
+      </div>
+      <div class="workstation__item">
+        <div class="workstation__icon">🤖</div>
+        <span class="workstation__name">ChatGPT</span>
+      </div>
+      <div class="workstation__item">
+        <div class="workstation__icon">✨</div>
+        <span class="workstation__name">Gemini</span>
+      </div>
+      <div class="workstation__item">
+        <div class="workstation__icon">🔷</div>
+        <span class="workstation__name">Copilot</span>
+      </div>
+      <div class="workstation__item">
+        <div class="workstation__icon">🎨</div>
+        <span class="workstation__name">Canva</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ═══════════════ PROJECTS ═══════════════ -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="projects__header">
+        <div>
+          <p class="label reveal">Selected work</p>
+          <h2 class="display-lg reveal reveal-delay-1">Recent<br>Projects</h2>
+        </div>
+      </div>
+
+      <div class="projects__grid">
+        <!-- Project 1: Loan Default -->
+        <div class="project-card reveal" data-modal="modal-loan" id="project-loan">
+          <div class="project-card__image">
+            <img src="assets/project-loan-dashboard.png" alt="Power BI dashboard showing loan default prediction analytics with risk segments and KPIs" loading="lazy">
+            <div class="project-card__overlay">
+              <span class="project-card__view">
+                View Case Study
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <div class="project-card__tags">
+              <span class="project-card__tag">Power BI</span>
+              <span class="project-card__tag">DAX</span>
+              <span class="project-card__tag">Data Modeling</span>
+            </div>
+            <h3 class="project-card__title">Loan Default Prediction Dashboard</h3>
+            <p class="project-card__excerpt">Analyzed 148,671+ loan records to identify approval patterns, default risk, and borrower behavior for data-driven credit decisions.</p>
+            <div class="project-card__metric">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              40% reduction in manual reporting
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Customer Churn -->
+        <div class="project-card reveal reveal-delay-1" data-modal="modal-churn" id="project-churn">
+          <div class="project-card__image">
+            <img src="assets/project-churn-analysis.png" alt="Python notebook showing customer churn prediction with RFM segmentation charts and machine learning models" loading="lazy">
+            <div class="project-card__overlay">
+              <span class="project-card__view">
+                View Case Study
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <div class="project-card__tags">
+              <span class="project-card__tag">Python</span>
+              <span class="project-card__tag">Machine Learning</span>
+              <span class="project-card__tag">RFM</span>
+            </div>
+            <h3 class="project-card__title">Customer Churn Prediction &amp; RFM Segmentation</h3>
+            <p class="project-card__excerpt">Examined 1M+ retail transactions to uncover revenue concentration and build actionable customer segments for targeted lifecycle marketing.</p>
+            <div class="project-card__metric">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              5 actionable customer segments
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Project Modals ═══ -->
+
+  <!-- Modal: Loan Default -->
+  <div class="modal" id="modal-loan">
+    <div class="modal__backdrop"></div>
+    <div class="modal__container">
+      <button class="modal__close" aria-label="Close case study">✕</button>
+      <img class="modal__image" src="assets/project-loan-dashboard.png" alt="Loan Default Prediction Dashboard" loading="lazy">
+      <div class="modal__body">
+        <div class="modal__tags">
+          <span class="project-card__tag">Power BI</span>
+          <span class="project-card__tag">DAX</span>
+          <span class="project-card__tag">Data Modeling</span>
+          <span class="project-card__tag">Oct – Nov 2025</span>
+        </div>
+
+        <h2 class="modal__title">Loan Default Prediction Dashboard</h2>
+
+        <div class="modal__section">
+          <h3 class="modal__section-title">Problem Statement</h3>
+          <p class="modal__text">Financial institutions needed a systematic way to identify loan default patterns and borrower risk profiles to improve credit decision-making and reduce default rates.</p>
+        </div>
+
+        <div class="modal__section">
+          <h3 class="modal__section-title">Data Source &amp; Scale</h3>
+          <p class="modal__text">148,671+ loan records encompassing approval patterns, borrower demographics, loan purposes, regional data, and repayment behavior.</p>
+        </div>
+
+        <div class="modal__section">
+          <h3 class="modal__section-title">Methodology</h3>
+          <ul class="modal__list">
+            <li>Performed extensive data cleaning including null handling, feature selection, and data transformation to ensure dataset reliability.</li>
+            <li>Built an interactive Power BI dashboard with 10+ KPIs and custom DAX measures for dynamic risk analysis.</li>
+            <li>Applied segmentation analysis to identify high-risk borrower groups by loan purpose, geography, and demographic factors.</li>
+          </ul>
+        </div>
+
+        <div class="modal__section">
+          <h3 class="modal__section-title">Tools Used</h3>
+          <div class="modal__tags">
+            <span class="skills__tag">Power BI</span>
+            <span class="skills__tag">DAX</span>
+            <span class="skills__tag">Data Cleaning</span>
+            <span class="skills__tag">KPI Design</span>
+          </div>
+        </div>
+
+        <div class="modal__section">
+          <h3 class="modal__section-title">Key Results</h3>
+          <div class="modal__metrics">
+            <div class="modal__metric-item">
+              <div class="modal__metric-value">148K+</div>
+              <div class="modal__metric-label">Loan records analyzed</div>
+            </div>
+            <div class="modal__metric-item">
+              <div class="modal__metric-value">10+</div>
+              <div class="modal__metric-label">KPIs & DAX measures</div>
+            </div>
+            <div class="modal__metric-item">
+              <div class="modal__metric-value">40%</div>
+              <div class="modal__metric-label">Reduced manual reporting</div>
+            </div>
+            <div class="modal__metric-item">
+              <div class="modal__metric-value">20-25%</div>
+              <div class="modal__metric-label">Potential default reduction</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal__section">
+          <h3 class="modal__section-title">Impact</h3>
+          <ul class="modal__list">
+            <li>Improved dataset reliability and analytical accuracy by 30% through systematic data cleaning.</li>
+            <li>Identified high-risk segments (loan purpose p4, North/South regions), delivering insights that can potentially reduce loan defaults by 20–25% through targeted policy improvements.</li>
+            <li>Reduced manual reporting effort by 40% with automated interactive dashboards.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Customer Churn -->
+  <div class="modal" id="modal-churn">
+    <div class="modal__backdrop"></div>
+    <div class="modal__container">
+      <button class="modal__close" aria-label="Close case study">✕</button>
+      <img class="modal__image" src="assets/project-churn-analysis.png" alt="Customer Churn Prediction & RFM Segmentation" loading="lazy">
+      <div class="modal__body">
+        <div class="modal__tags">
+          <span class="project-card__tag">Python</span>
+          <span class="project-card__tag">Machine Learning</span>
+          <span class="project-card__tag">RFM Analysis</span>
+          <span class="project-card__tag">Jan – Feb 2026</span>
+        </div>
+
+        <h2 class="modal__title">Customer Churn Prediction &amp; RFM Segmentation</h2>
+
+        <div class="modal__section">
+          <h3 class="modal__section-title">Problem Statement</h3>
+          <p class="modal__text">A retail business needed to identify at-risk customers and segment its customer base to enable targeted retention strategies and optimize lifecycle marketing investments.</p>
+        </div>
+
+        <div class="modal__section">
+          <h3 class="modal__section-title">Data Source &amp; Scale</h3>
+          <p class="modal__text">1,000,000+ retail transaction records covering customer purchase history, frequencies, monetary values, and behavioral patterns.</p>
+        </div>
+
+        <div class="modal__section">
+          <h3 class="modal__section-title">Methodology</h3>
+          <ul class="modal__list">
+            <li>Engineered customer-level features including Recency, Frequency, Monetary value, AOV, purchase intervals, and return rates.</li>
+            <li>Built an RFM-based segmentation model classifying customers into 5 actionable segments: Champions, Loyal, At-Risk, Lost, and New.</li>
+            <li>Developed and compared Logistic Regression and Random Forest models for churn prediction, selecting Random Forest based on superior performance metrics.</li>
+          </ul>
+        </div>
+
+        <div class="modal__section">
+          <h3 class="modal__section-title">Tools Used</h3>
+          <div class="modal__tags">
+            <span class="skills__tag">Python</span>
+            <span class="skills__tag">Pandas</span>
+            <span class="skills__tag">Scikit-learn</span>
+            <span class="skills__tag">Random Forest</span>
+            <span class="skills__tag">RFM Analysis</span>
+          </div>
+        </div>
+
+        <div class="modal__section">
+          <h3 class="modal__section-title">Key Results</h3>
+          <div class="modal__metrics">
+            <div class="modal__metric-item">
+              <div class="modal__metric-value">1M+</div>
+              <div class="modal__metric-label">Transactions analyzed</div>
+            </div>
+            <div class="modal__metric-item">
+              <div class="modal__metric-value">5</div>
+              <div class="modal__metric-label">Customer segments</div>
+            </div>
+            <div class="modal__metric-item">
+              <div class="modal__metric-value">Top 10%</div>
+              <div class="modal__metric-label">Revenue concentration</div>
+            </div>
+            <div class="modal__metric-item">
+              <div class="modal__metric-value">RF</div>
+              <div class="modal__metric-label">Best model (F1 & AUC)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal__section">
+          <h3 class="modal__section-title">Impact</h3>
+          <ul class="modal__list">
+            <li>Uncovered that the top 10% of customers contributed a disproportionate share of total revenue, informing a high-value retention strategy.</li>
+            <li>Enabled targeted lifecycle marketing interventions through 5-segment RFM classification.</li>
+            <li>Recommended Random Forest model for deployment based on superior F1-score and ROC-AUC performance over Logistic Regression.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__bio">
+        <p class="label reveal">About me</p>
+        <h2 class="display-lg reveal reveal-delay-1" style="margin-bottom: var(--sp-xl);">Know Me<br>Better</h2>
+
+        <p class="about__bio-text reveal reveal-delay-2">
+          I'm Harendra Pratap — an MBA candidate specializing in Business Analytics at Jaipuria Institute of Management, Ghaziabad, with a strong mathematical foundation from my B.Sc. in Mathematics.
+        </p>
+        <p class="about__bio-text reveal reveal-delay-3">
+          What draws me to analytics is the power to transform ambiguous data into clear, strategic narratives. Whether it's predicting loan defaults with Power BI dashboards or segmenting customers through machine learning, I thrive at the intersection of data science and business impact.
+        </p>
+        <p class="about__bio-text reveal reveal-delay-3">
+          I'm proficient in Python, R, SQL, Excel, Tableau, and Power BI — and passionate about leveraging GenAI tools to push the boundaries of what data can reveal. Currently seeking Business Analyst and Data Analyst roles where I can drive measurable outcomes.
+        </p>
+
+        <!-- Education -->
+        <div class="about__education reveal">
+          <h3 class="about__section-title">Education</h3>
+          <div class="edu-item">
+            <span class="edu-item__year">2025 – 27</span>
+            <div>
+              <p class="edu-item__title">MBA — Business Analytics</p>
+              <p class="edu-item__school">Jaipuria Institute of Management, Ghaziabad<br>Dr. A.P.J. Abdul Kalam Technical University, Lucknow<br><em style="color: var(--terracotta); font-size: 0.82rem;">Currently Pursuing</em></p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <span class="edu-item__year">2021 – 24</span>
+            <div>
+              <p class="edu-item__title">B.Sc. — Mathematics</p>
+              <p class="edu-item__school">Om Degree College, Shikohabad<br>Dr. Bhimrao Ambedkar University, Agra<br><em style="font-size: 0.82rem; color: var(--grey);">CGPA: 7.56 / 10</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <!-- Certifications -->
+        <div class="about__certifications reveal">
+          <h3 class="about__section-title">Certifications</h3>
+
+          <div class="cert-item">
+            <div class="cert-item__icon">📊</div>
+            <div>
+              <p class="cert-item__name">Power BI Data Modeling with DAX</p>
+              <p class="cert-item__source">LinkedIn Learning · Nov 2025</p>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-item__icon">📗</div>
+            <div>
+              <p class="cert-item__name">Excel Essential Training (Microsoft 365)</p>
+              <p class="cert-item__source">LinkedIn Learning · Nov 2025</p>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-item__icon">📗</div>
+            <div>
+              <p class="cert-item__name">Master Microsoft Excel</p>
+              <p class="cert-item__source">LinkedIn Learning · Mar 2026</p>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-item__icon">🐍</div>
+            <div>
+              <p class="cert-item__name">Data Analytics with Python</p>
+              <p class="cert-item__source">NPTEL · Jan – Apr 2026</p>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-item__icon">📈</div>
+            <div>
+              <p class="cert-item__name">Business Intelligence &amp; Analytics</p>
+              <p class="cert-item__source">NPTEL · Jan – Apr 2026</p>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-item__icon">🏢</div>
+            <div>
+              <p class="cert-item__name">Data Analytics Job Simulation</p>
+              <p class="cert-item__source">Deloitte Australia / Forage · Apr 2026</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activities -->
+        <div class="about__activities reveal">
+          <h3 class="about__section-title" style="margin-top: var(--sp-2xl);">Co-Curricular Activities</h3>
+          <div class="activity-item">Attended the 11th Corporate Summit 2025 (Feb 28, 2026)</div>
+          <div class="activity-item">Core team member — IT Club, Jaipuria Institute of Management</div>
+          <div class="activity-item">Tech-Driven Problem Solving — Tech Quest Competition</div>
+          <div class="activity-item">Qualified in NISM Quiz — College Round &amp; Online Round</div>
+          <div class="activity-item">Google Gemini AI Tools Training Workshop participant</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ═══════════════ CONTACT ═══════════════ -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <p class="label reveal">Get in touch</p>
+        <h2 class="display-lg contact__heading reveal reveal-delay-1">Let's Work<br>Together</h2>
+        <p class="contact__text reveal reveal-delay-2">
+          I'm currently open to Business Analyst and Data Analyst opportunities. Whether you have a role, a project, or just want to connect — I'd love to hear from you.
+        </p>
+
+        <div class="contact__links reveal reveal-delay-3">
+          <a href="mailto:harendraburah2003@gmail.com" class="contact__link-item" id="contact-email">
+            <div class="contact__link-icon">✉️</div>
+            <div>
+              <p class="contact__link-label">Email</p>
+              <p class="contact__link-value">harendraburah2003@gmail.com</p>
+            </div>
+          </a>
+
+          <a href="tel:+919520791883" class="contact__link-item" id="contact-phone">
+            <div class="contact__link-icon">📞</div>
+            <div>
+              <p class="contact__link-label">Phone</p>
+              <p class="contact__link-value">+91-9520791883</p>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com/in/preharendra" target="_blank" rel="noopener" class="contact__link-item" id="contact-linkedin">
+            <div class="contact__link-icon">💼</div>
+            <div>
+              <p class="contact__link-label">LinkedIn</p>
+              <p class="contact__link-value">linkedin.com/in/preharendra</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/preharendra" target="_blank" rel="noopener" class="contact__link-item" id="contact-github">
+            <div class="contact__link-icon">🐙</div>
+            <div>
+              <p class="contact__link-label">GitHub</p>
+              <p class="contact__link-value">github.com/preharendra</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact__form reveal reveal-delay-2" id="contact-form-wrapper">
+        <h3 class="contact__form-title">Send a Message</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
+            <p class="error-text">Please enter your name</p>
+          </div>
+          <div class="form-group">
+            <label for="contact-email-input">Your Email</label>
+            <input type="email" id="contact-email-input" name="email" placeholder="john@example.com" required>
+            <p class="error-text">Please enter a valid email address</p>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+            <p class="error-text">Please enter your message</p>
+          </div>
+          <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center;" id="contact-submit-btn">
+            Send Message
+            <svg class="btn--icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          ✅ <span>Thank you! Your message has been sent. I'll get back to you soon.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2026 Harendra Pratap. Built with ❤️ and data.</p>
+      <div class="footer__socials">
+        <a href="mailto:harendraburah2003@gmail.com" class="footer__social-link" aria-label="Email" id="footer-email">✉️</a>
+        <a href="https://linkedin.com/in/preharendra" target="_blank" rel="noopener" class="footer__social-link" aria-label="LinkedIn" id="footer-linkedin">💼</a>
+        <a href="https://github.com/preharendra" target="_blank" rel="noopener" class="footer__social-link" aria-label="GitHub" id="footer-github">🐙</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
