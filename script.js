@@ -210,61 +210,42 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       if (isValid) {
-        // Disable submit button & show loading state
-        const submitBtn = document.getElementById('contact-submit-btn');
-        const originalBtnHTML = submitBtn.innerHTML;
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = `
-          <svg class="btn--icon spinner" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" style="animation: spin 1s linear infinite;">
-            <circle cx="12" cy="12" r="10" stroke-dasharray="31.4 31.4" />
-          </svg>
-          Sending...
-        `;
+        // Capture values before resetting
+        const nameVal = nameInput.value.trim();
+        const emailVal = emailInput.value.trim();
+        const messageVal = messageInput.value.trim();
+        const timestampVal = new Date().toLocaleString();
 
-        // Prepare form data for Google Sheets
-        const formData = new FormData();
-        formData.append('name', nameInput.value.trim());
-        formData.append('email', emailInput.value.trim());
-        formData.append('message', messageInput.value.trim());
-        formData.append('timestamp', new Date().toLocaleString());
+        // Show success message immediately
+        contactForm.style.display = 'none';
+        formSuccess.classList.add('show');
+        contactForm.reset();
 
-        // Google Apps Script Web App URL — replace with your deployed script URL
-        const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbxYourDeploymentIdHere/exec';
+        // Reset form view after delay
+        setTimeout(() => {
+          contactForm.style.display = 'block';
+          formSuccess.classList.remove('show');
+        }, 5000);
 
-        fetch(GOOGLE_SHEET_URL, {
-          method: 'POST',
-          mode: 'no-cors',
-          body: formData,
-        })
-          .then(() => {
-            // Show success message
-            contactForm.style.display = 'none';
-            formSuccess.classList.add('show');
-            contactForm.reset();
+        // Send data to Google Sheets in the background
+        try {
+          const formData = new FormData();
+          formData.append('name', nameVal);
+          formData.append('email', emailVal);
+          formData.append('message', messageVal);
+          formData.append('timestamp', timestampVal);
 
-            // Reset form after delay
-            setTimeout(() => {
-              contactForm.style.display = 'block';
-              formSuccess.classList.remove('show');
-            }, 5000);
-          })
-          .catch(error => {
-            console.error('Error submitting form:', error);
-            // Still show success — data may have been sent
-            contactForm.style.display = 'none';
-            formSuccess.classList.add('show');
-            contactForm.reset();
+          // Google Apps Script Web App URL
+          const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbxYourDeploymentIdHere/exec';
 
-            setTimeout(() => {
-              contactForm.style.display = 'block';
-              formSuccess.classList.remove('show');
-            }, 5000);
-          })
-          .finally(() => {
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = originalBtnHTML;
-          });
+          fetch(GOOGLE_SHEET_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            body: formData,
+          }).catch(() => {});
+        } catch (err) {
+          // Silently ignore — form success already shown
+        }
       }
     });
 
