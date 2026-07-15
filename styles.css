@@ -1061,6 +1061,86 @@ section {
   margin-top: 0.2rem;
 }
 
+/* ── Project Card GitHub Link ── */
+.project-card__github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: var(--sp-md);
+  padding: 0.45rem 1.1rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 100px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 10;
+}
+
+.project-card__github svg {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.project-card__github:hover {
+  background: var(--terracotta);
+  color: var(--cream);
+  border-color: var(--terracotta);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(200, 110, 70, 0.35);
+}
+
+.project-card__github:hover svg {
+  transform: scale(1.15);
+}
+
+/* ── Modal GitHub Button ── */
+.modal__github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: var(--sp-xl);
+  padding: 0.75rem 1.6rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--cream);
+  background: linear-gradient(135deg, #333, #1a1a1a);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.02em;
+}
+
+.modal__github-btn svg {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.modal__github-btn svg:first-child {
+  fill: var(--cream);
+}
+
+.modal__github-btn svg:last-child {
+  opacity: 0.7;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal__github-btn:hover {
+  background: linear-gradient(135deg, var(--terracotta), #a0522d);
+  border-color: var(--terracotta);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(200, 110, 70, 0.4);
+}
+
+.modal__github-btn:hover svg:last-child {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
+
 /* ── About Section ── */
 .about {
   background-color: var(--surface);

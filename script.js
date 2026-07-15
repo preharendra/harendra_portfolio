@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
           formData.append('timestamp', timestampVal);
 
           // Google Apps Script Web App URL
-          const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbzlRvcW0EYV0JF0xdU-NW4C4OvX_y4rL4BsJlWJOJBZw9p0WBQqAZfVdaf9OB03CZaBrw/exec';
+          const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbzDHkMaNcnjH19l3iuU9fjbNf9AFbQrM8S6iTiE6qPxoa-LSPahjjRXASrjVwCW1JyQ/exec';
 
           fetch(GOOGLE_SHEET_URL, {
             method: 'POST',
