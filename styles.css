@@ -1256,17 +1256,18 @@ section {
 }
 
 .cert-item__link {
-  font-size: 0.75rem;
-  color: var(--terracotta);
-  text-decoration: none;
-  margin-top: 2px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #C9743B;
+  text-decoration: underline;
+  margin-top: 4px;
   display: inline-block;
-  transition: opacity 0.2s ease;
+  transition: color 0.2s ease, opacity 0.2s ease;
 }
 
 .cert-item__link:hover {
-  opacity: 0.8;
-  text-decoration: underline;
+  color: #a85e2d;
+  opacity: 0.9;
 }
 
 /* Activities */
