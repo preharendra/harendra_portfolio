@@ -1255,6 +1255,15 @@ section {
   color: var(--grey);
 }
 
+.cert-item__id {
+  font-size: 0.72rem;
+  color: var(--grey);
+  opacity: 0.7;
+  font-family: 'Courier New', Courier, monospace;
+  word-break: break-all;
+  margin-top: 2px;
+}
+
 /* Activities */
 .about__activities {
   margin-top: var(--sp-2xl);
