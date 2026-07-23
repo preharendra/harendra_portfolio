@@ -398,15 +398,95 @@ section {
   align-items: center;
 }
 
-.hero__image img {
-  width: 100%;
-  max-width: 520px;
-  border-radius: 16px;
-  transition: transform var(--transition-slow);
+/* ── Profile Photo Wrapper ── */
+.hero__photo-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
 
-.hero__image:hover img {
-  transform: scale(1.02);
+.hero__photo {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 50%;
+  border: 5px solid var(--surface);
+  box-shadow: 0 20px 60px rgba(17,17,17,0.14), 0 4px 16px rgba(201,116,59,0.12);
+  transition: transform var(--transition-slow), box-shadow var(--transition-slow);
+  position: relative;
+  z-index: 2;
+}
+
+.hero__photo-wrapper:hover .hero__photo {
+  transform: scale(1.03);
+  box-shadow: 0 28px 72px rgba(17,17,17,0.18), 0 6px 24px rgba(201,116,59,0.2);
+}
+
+/* Rotating gradient ring */
+.hero__photo-ring {
+  position: absolute;
+  inset: -10px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    var(--terracotta),
+    var(--peach),
+    var(--peach-light),
+    var(--terracotta)
+  );
+  z-index: 1;
+  animation: spinRing 8s linear infinite;
+}
+
+@keyframes spinRing {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Soft glow behind photo */
+.hero__photo-glow {
+  position: absolute;
+  inset: -30px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(243,201,155,0.45) 0%, transparent 70%);
+  z-index: 0;
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50%       { opacity: 1;   transform: scale(1.08); }
+}
+
+/* Floating badge */
+.hero__photo-badge {
+  position: absolute;
+  bottom: 12px;
+  right: -16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--surface);
+  border-radius: 100px;
+  box-shadow: 0 4px 20px rgba(17,17,17,0.12);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink);
+  z-index: 3;
+  animation: floatBadge 4s ease-in-out infinite;
+}
+
+.hero__photo-badge-icon {
+  font-size: 1rem;
+}
+
+@keyframes floatBadge {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-6px); }
 }
 
 /* Floating decorative elements */
@@ -1533,6 +1613,11 @@ section {
     margin: 0 auto;
   }
 
+  .hero__photo {
+    width: 280px;
+    height: 280px;
+  }
+
   .services__grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1647,6 +1732,17 @@ section {
   .hero__ctas .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .hero__photo {
+    width: 220px;
+    height: 220px;
+  }
+
+  .hero__photo-badge {
+    right: -8px;
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
   }
 
   .stats__grid {
